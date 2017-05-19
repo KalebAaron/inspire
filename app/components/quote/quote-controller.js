@@ -16,6 +16,7 @@ function QuoteController() {
 		<div class='row'>
 		<div class="col-sm-8 col-sm-offset-2 well quoteWell">
 		<h4 class='todaysQuote'>Today's Quote:<br> ${quote.quote}</h4>
+		<div class="author"><h4>Author:<br> ${quote.author}</h4></div>
 		</div>
     </div>
 		</div>

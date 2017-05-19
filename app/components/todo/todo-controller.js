@@ -14,7 +14,11 @@ function TodoController() {
 					${todo} <button type="button" onclick="app.controllers.todoController.removeTodo('${todo}')">Remove</button><br>
 				`
 		}
-
+		if (data.length > 0) {
+			var todos = data.length;
+			todoTemplate = `
+			<h5>To do: ${todos}</h5>`
+		}
 		elem.innerHTML = template + todoTemplate;
 	}
 
@@ -27,6 +31,7 @@ function TodoController() {
 		todoService.saveTodos(todosArray);
 		todosList = todosArray
 		drawTodos(todosArray);
+		form.reset()
 	}
 
 	this.removeTodo = function removeTodo(todo) {
