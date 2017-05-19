@@ -10,7 +10,7 @@ this.getImage()
 
 function draw(image){
 	image = JSON.parse(image)
-	var imageElem = document.getElementById("image").style.backgroundImage = `url('${image.url}')`
+	var imageElem = document.getElementById("body").style.backgroundImage = `url('${image.url}')`
   }
 }
 

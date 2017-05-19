@@ -12,8 +12,13 @@ function QuoteController() {
 		var todaysQuote = document.getElementById("quote")
 		var template = ''
 
-		template += `<h1>Today's Quote: ${quote.quote}</h1>
-    
+		template += `<div class = 'container'>
+		<div class='row'>
+		<div class="col-sm-8 col-sm-offset-2 well quoteWell">
+		<h4 class='todaysQuote'>Today's Quote:<br> ${quote.quote}</h4>
+		</div>
+    </div>
+		</div>
     `
 		todaysQuote.innerHTML = template
 	}
