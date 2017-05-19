@@ -22,7 +22,7 @@
 		<div class="row" id="toDoDiv">
 			<div class="col-sm-3 col-sm-offset-9" id="todo">
 				<div class="well toDoWell">
-					<form id="getTodo" onsubmit="app.controllers.todoController.createToDo(e)">
+					<form id="getTodo" onsubmit="app.controllers.todoController.addTodoFromForm(event)">
 						<label name="yourToDo">What's going on today?</label><br>
 						<input type="text" name="newToDo" placeholder="To-Do Today" /><br><br>
 						<input type="submit" value="Add to list" />
